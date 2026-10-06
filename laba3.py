@@ -95,10 +95,6 @@ def admin():
     password = input("пароль: ")
     if login == adm_login and password == adm_password:
         print("\nвхід здійснено")
-        for product in sorted(
-            products,
-            key=lambda x: x["name"]
-        ):
             admin_panel()
     else:
         print("неправильний логін або пароль")
